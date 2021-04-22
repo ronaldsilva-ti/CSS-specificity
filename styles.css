@@ -1,0 +1,47 @@
+/* Especifidade 
+
+https://specificity.keegan.st/
+*/
+
+/* Qual seletor tem precedencia */
+
+/* 
+
+    A) Estilos Inline
+    B)IDs
+    C)Classes, pseudoclasses e atributos
+    D)Elementos e pseudoelementos
+*/
+
+/* 
+
+    h1{}
+    0.0.0.1
+    A.B.C.D
+
+    div h1{}
+    0.0.0.2 = 1 -> possui dois elementos
+    A.B.C.D
+
+
+    .red{}
+    0.0.1.0 = 10
+    A.B.C.D
+
+*/
+
+/* .red {
+  color: red;
+} */
+
+h1 {
+  color: blue;
+}
+
+body h1 {
+  color: darkcyan;
+}
+
+#green {
+  color: green;
+}
